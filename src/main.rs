@@ -16,24 +16,24 @@ fn is_pointer_precision_on() -> bool {
 fn main()
 {
 
-let is_pointer_precision_on: bool = is_pointer_precision_on();
-let pointer_precision_text;
+    let is_pointer_precision_on: bool = is_pointer_precision_on();
+    let pointer_precision_text: &str;
 
-if is_pointer_precision_on {
-    pointer_precision_text = "Mouse Acceleration is on";
-} else {
-    pointer_precision_text = "Mouse Acceleration is off";
-}
+    if is_pointer_precision_on {
+        pointer_precision_text = "Mouse Acceleration is on";
+    } else {
+        pointer_precision_text = "Mouse Acceleration is off";
+    }
 
-Toast::new("ma")
-    .hero(&Path::new("kek"), "MA")
-    .icon(&Path::new("kek"), IconCrop::Square, "MAicon")
-    .title("Mouse Acceleration")
-    .text1("(╯°□°）╯︵ ┻━┻")
-    .text2(&pointer_precision_text)
-    .sound(None)
-    .duration(Duration::Short)
-    .show()
-    .expect("unable to toast");
+    Toast::new("ma")
+        .hero(&Path::new("kek"), "MA")
+        .icon(&Path::new("kek"), IconCrop::Square, "MAicon")
+        .title("Mouse Acceleration")
+        .text1("(╯°□°）╯︵ ┻━┻")
+        .text2(&pointer_precision_text)
+        .sound(None)
+        .duration(Duration::Short)
+        .show()
+        .expect("unable to toast");
 
 }
