@@ -25,9 +25,9 @@ fn main()
         pointer_precision_text = "Mouse Acceleration is off";
     }
 
-    Toast::new("ma")
-        .hero(&Path::new("kek"), "MA")
-        .icon(&Path::new("kek"), IconCrop::Square, "MAicon")
+    Toast::new(Toast::POWERSHELL_APP_ID)
+        //.hero(&Path::new("kek"), "MA")
+        //.icon(&Path::new("kek"), IconCrop::Square, "MAicon")
         .title("Mouse Acceleration")
         .text1("(╯°□°）╯︵ ┻━┻")
         .text2(&pointer_precision_text)
